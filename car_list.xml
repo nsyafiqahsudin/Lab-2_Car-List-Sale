@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="car_list.xsl"?>
+<car_list>
+
+  <sale dev="JS">
+    <name>The New Proton Ertiga</name>
+    <price>RM58,800</price>
+    <description>Experience the Refinement.</description>
+    <image>img/protonertiga.png</image>
+     
+  </sale >
+
+  <sale  dev="JS">
+    <name>The New Proton Persona </name>
+    <price>RM46,350</price>
+    <description>Experience the Evolution.</description>
+    <image>img/newpersona.png</image>
+  
+   
+
+  </sale >
+
+<sale dev="JS">
+    <name>The New Saga</name>
+    <price>RM36,800</price>
+    <description>Experience the Refinement.</description>
+    <image>img/newsaga.png</image>
+    
+  </sale>
+
+
+  <sale dev="JS">
+    <name>Proton IRIZ </name>
+    <price>RM41,520</price>
+    <description>Socially connected world in style.
+    </description>
+    <image>img/iriz.png</image>
+    
+  </sale>
+
+
+<sale dev="JS">
+    <name>Proton Suprima S</name>
+    <price>RM69,840</price>
+    <description>Fully loaded with built-in value.</description>
+    <image>img/suprima.png</image>
+   
+  </sale>
+
+  <sale dev="JS">
+    <name>Proton Preve</name>
+    <price>RM59,170</price>
+    <description>Drive it to believe it.</description>
+    <image>img/preve.png</image>
+    
+    
+  </sale>
+
+
+</car_list>

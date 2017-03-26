@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Programming_Lab 2</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<style>
+header, footer {    //css 
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+</style>
+<script>
+$(document).ready(function () {  //load xml file using jQuery 
+    $.ajax({
+        type: "GET",  //Requests data from a specified resource
+        url: "car_list.xml", //will read data in that xml file
+        dataType: "xml",
+        success: function(xml) {
+            var output = '<ul>';  //display in list
+            $(xml).find('sale').each(function(){  //will find the data in xml file, which inside the 'sale' scope
+
+
+                var $sale = $(this);    
+                var Name = $sale.find('name').text();  //find the name of car inside xml file with the id 'sale'
+                var Price = $sale.find('price').text();//identify the price inside xml file with the id 'sale'
+                var Description = $sale.find('description').text();
+                var Image = $sale.find('image').text();//find the image resource inside xml file with the id 'sale'
+                
+            
+            //this will create table and display all the cars
+                output += "<table>"+"<tr>" + "<td>" +"<img src='" + Image + "' alt='"+"'height=100'"  + "'width=400 style='margin-right: 20px;'>"+'</td>'+'<p>'+"<td>"+  Name + '<p>'+ Price + '</p>'+Description + '<p>'+'</td>' +"</tr>"+"</table>" ;
+
+            });
+            output += '<ul>'; //will loop,and display the car list
+            $('#update').html(output); //update the list and continue until done
+        }
+    });
+});
+</script>
+
+<body>
+<h1><strong>CAR LIST FOR SALE</strong></h1>
+<!-- <div><center><strong>LIST OF CAR SALE</strong></center></div> -->
+
+<div id="update"></div> 
+<footer>Copyright &copy; Nurul Syafiqah Bt. Sudin,UTM Skudai</footer>
+</body>
+
+</html>

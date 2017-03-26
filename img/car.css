@@ -1,0 +1,30 @@
+table.carSale{
+	background-color: #07C1B0 ;
+	font-family: Helvetica;
+	margin: 10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+
+}
+
+
+table.carSale thead tr th{
+	background-color: #06978A ;
+	border-style: solid;
+    border-color: #ff0000 #0000ff;
+	font-size: 8pt;
+	text-align: center;
+	padding: 10px;
+
+}
+
+
+table.carSale tbody tr td{
+	background-color: #047C71 ;
+    color: #ff0000 #0000ff;
+	font-size: 8pt;
+	vertical-align: top;
+	padding: 10px;
+
+}
